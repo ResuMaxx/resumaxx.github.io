@@ -5,13 +5,13 @@ Application that searches the internet for opportunities and experiences (such a
 
   
 # Team members:  
-Adam Itani -  
+Adam Itani -  300544018
 Marc Andrade Essame Ebelle -  
-Milda Gagnon -  
-Mya Mayhew -  
-Ngo Véronique -  
+Milda Gagnon -  300519169
+Mya Mayhew -  300539907
+Ngo Véronique -  300567407
 Shafeeq Yussuf - 300565854
 
-Team name: ResuMaxx
+# Team name: ResuMaxx
 
  
