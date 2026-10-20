@@ -1,12 +1,255 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>ResuMaxx</title>
+
+    <!-- Loads the fonts from Google Fonts (needs internet) -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* ---------- Colors ---------- */
+                :root {
+                    --background: #0d1a2b;   /* dark blue page background */
+                    --text: #eef2f8;         /* light blue text */
+                    --gray: #9fb0c6;         /* softer text */
+                    --line: #1c2c44;         /* thin separator lines */
+                    --green: #9efff4;        /* accent green */
+                    --green-dark: #3fd1c0;   /* button green */
+                }
+        /* ---------- Basic Setup ---------- */
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+
+                body {
+                    font-family: "IBM Plex Sans", Arial, sans-serif;
+                    background-color: var(--background);
+                    color: var(--text);
+                }
+
+                /* container keeps content centered and not too wide */
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto; /* auto on the sides = centered */
+                    padding: 0 20px;
+                }
+        /* ---------- Navigation Bar ---------- */
+                .navbar {
+                    display: flex; /* flex = children are side by side */
+                    justify-content: space-between; /* logo left, links right */
+                    align-items: center; /* vertically center children */
+                    padding: 24px 0;
+                }
+
+                .logo {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                .nav-links {
+                    list-style: none; /* removes bullet pts */
+                    display: flex;
+                    gap: 28px;        /* space between links */
+                }
+
+                .nav-links a {
+                    color: var(--gray);
+                    text-decoration: none; /* removes underline */
+                    padding-bottom: 6px; /* underline */
+                }
+
+                .nav-links a.active {
+                    color: var(--text);
+                    border-bottom: 2px solid var(--green); /* green line under "Home" */
+                }
+        /* ---------- Hero Section ---------- */
+                .hero {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 40px;
+                    padding: 70px 0 90px;
+                }
+
+                .hero-left {
+                    flex: 1; /* takes up remaining space */
+                }
+
+                h1 {
+                    font-size: 60px;
+                    font-weight: 500;
+                    line-height: 1.1;
+                }
+
+                /* the green word "noticed." */
+                .green-text {
+                    color: var(--green);
+                }
+
+                .subtitle {
+                    color: var(--gray);
+                    font-size: 20px;
+                    margin: 28px 0 34px;  /* top, sides, bottom */
+                }
+
+        /* ---------- Buttons ---------- */
+                .buttons {
+                    display: flex;
+                    gap: 12px;
+                }
+
+                .button {
+                    padding: 14px 24px;
+                    border-radius: 6px;   /* rounded corners */
+                    border: 1px solid var(--line);
+                    color: var(--text);
+                    text-decoration: none; /* removes underline */
+                    font-size: 17px;
+                }
+
+                .button-green {
+                    background-color: var(--green-dark);
+                    border-color: var(--green-dark);
+                }
+
+        /* ---------- Score Panel ---------- */
+                .score-panel {
+                    width: 340px;
+                    padding-top: 40px;
+                }
+
+                /* small uppercase labels: "RÉSUMÉ SCORE", "FIND", "BUILD", "SHOW" */
+                .small-label {
+                    font-family: "IBM Plex Mono", monospace;
+                    font-size: 13px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: var(--gray);
+                }
+
+                .big-number {
+                    font-size: 68px;
+                    font-weight: 500;
+                    margin: 4px 0 28px;
+                }
+
+        /* ---------- 3 columns at the bottom ---------- */
+                .features {
+                    display: flex;
+                    gap: 24px;
+                    border-top: 1px solid var(--line); /* thin line above the section */
+                    padding: 32px 0 60px;
+                }
+
+                .feature {
+                    flex: 1; /* all 3 columns get the same width */
+                }
+
+                .feature h3 {
+                    font-size: 18px;
+                    margin: 10px 0 8px;
+                }
+
+                .feature p {
+                    color: var(--gray);
+                    font-size: 18px;
+                }
+
+        /* ---------- Phone version ---------- */
+                /* media query for screens smaller than 800px */
+                @media (max-width: 800px) {
+                    .navbar,
+                    .hero,
+                    .features {
+                        flex-direction: column;   /* stack things vertically instead of side by side */
+                    }
+
+                    .navbar {
+                        align-items: flex-start;
+                        gap: 16px;
+                    }
+
+                    .score-panel {
+                        width: 100%;
+                        padding-top: 0;
+                    }
+
+                    h1 {
+                        font-size: 44px;
+                    }
+                }
+    </style>
 </head>
+
+
 <body>
-    <h1>Welcome to ResuMaxx!</h1>
-    <p>Our first website.</p>
+<!-- body = everything you see -->
+
+<div class="container">
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">ResuMaxx</div>
+
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#team">Team</a></li>
+        </ul>
+    </div>
+
+    <!-- ======= Hero Section ======= -->
+    <div class="hero">
+
+        <!-- Left side: title, subtitle, buttons -->
+        <div class="hero-left">
+            <h1>Résumés that<br>get <span class="green-text">noticed.</span></h1>
+
+            <p class="subtitle">
+                Find experience. Build your résumé. Stand out.
+            </p>
+
+            <div class="buttons">
+                <a href="#features" class="button button-green">See features</a>
+                <a href="#pricing" class="button">Pricing</a>
+            </div>
+        </div>
+
+        <!-- Right side: the score -->
+        <div class="score-panel">
+            <div class="small-label">Résumé score</div>
+            <div class="big-number">72</div>
+        </div>
+
+    </div>
+
+    <!-- ===== Three columns: Find / Build / Show ===== -->
+    <div class="features" id="features">
+
+        <div class="feature">
+            <div class="small-label">Find</div>
+            <h3>Opportunities</h3>
+            <p>Internships, clubs, events.</p>
+        </div>
+
+        <div class="feature">
+            <div class="small-label">Build</div>
+            <h3>Your résumé</h3>
+            <p>Clear, technical bullet points.</p>
+        </div>
+
+        <div class="feature">
+            <div class="small-label">Show</div>
+            <h3>What's missing</h3>
+            <p>A score and a gap list.</p>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>
