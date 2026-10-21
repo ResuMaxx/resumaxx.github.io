@@ -27,6 +27,20 @@
                     margin: 0 auto; /* auto on the sides = centered */
                     padding: 0 20px;
                 }
+                /* **container that makes elements side by side */
+                .row-container{
+                    display: flex;
+                    flex-direction: row;
+                    padding: 10px;
+                    gap: 16px;  
+                }
+                
+                /* container that stakcs elemtns */
+                .column-container{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;  
+                }
         /* ---------- Navigation Bar ---------- */
                 .navbar {
                     display: flex;                  /* flex = children are side by side */
@@ -170,5 +184,17 @@
                     h1 {
                         font-size: 44px;
                     }
+                }
+
+        /* ---------- ** Box Containers  ---------- */
+                
+                .box{
+                    display: flex;
+                    flex: 1 auto;
+                    padding: 10px;
+                    border-radius: 6px;
+                    border: 1px solid var(--line);
+                    font-size: 17px;
+                    min-height: 150px;
                 }
 
