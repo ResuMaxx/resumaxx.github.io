@@ -1,11 +1,11 @@
 /* GENERAL STYLES */
         /* ---------- Colors ---------- */
                 :root {
-                    --background: #0d1a2b;   /* dark blue page background */
-                    --text: #eef2f8;         /* light blue text */
-                    --gray: #9fb0c6;         /* softer text */
-                    --line: #1c2c44;         /* thin separator lines */
-                    --green: #9efff4;        /* accent green */
+                    --background: #f4f7fb;   /* light page background */
+                    --text: #14213d;         /* dark blue text */
+                    --gray: #55657a;         /* softer text */
+                    --line: #d9e2ec;         /* thin separator lines */
+                    --green: #0b7f72;        /* accent green */
                     --green-dark: #3fd1c0;   /* button green */
                 }
         /* ---------- Basic Setup ---------- */
@@ -32,14 +32,14 @@
                     display: flex;
                     flex-direction: row;
                     padding: 10px;
-                    gap: 16px;  
+                    gap: 16px;
                 }
-                
+
                 /* container that stakcs elemtns */
                 .column-container{
                     display: flex;
                     flex-direction: column;
-                    gap: 5px;  
+                    gap: 5px;
                 }
         /* ---------- Navigation Bar ---------- */
                 .navbar {
@@ -144,12 +144,24 @@
                 .features {
                     display: flex;
                     gap: 24px;
-                    border-top: 1px solid var(--line); /* thin line above the section */
-                    padding: 32px 0 60px;
+                    padding: 14px 0;
                 }
 
+                /* each column is now a white box */
                 .feature {
                     flex: 1; /* all 3 columns get the same width */
+                    background-color: white;
+                    border: 1px solid var(--line);
+                    border-radius: 12px;
+                    padding: 26px;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    animation: fadeUp 0.7s ease both;
+                }
+
+                /* box moves up a little when the mouse is on it */
+                .feature:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 10px 24px rgba(20, 33, 61, 0.12);
                 }
 
                 .feature h3 {
@@ -187,7 +199,7 @@
                 }
 
         /* ---------- ** Box Containers  ---------- */
-                
+
                 .box{
                     display: flex;
                     flex: 1 auto;
@@ -197,6 +209,7 @@
                     font-size: 17px;
                     min-height: 150px;
                 }
+
         /* ---------- Sign up button in hero ---------- */
                 #openBtn {
                     padding: 14px 24px;
@@ -206,15 +219,9 @@
                     color: var(--text);
                     font-size: 17px;
                     font-family: "IBM Plex Sans", Arial, sans-serif;
-                    cursor: pointer;
-                    transition: all 0.3s ease;
+
                 }
 
-                #openBtn:hover {
-                    background-color: var(--green);
-                    color: var(--background);
-                    transform: scale(1.05);
-                }
 
         /* ---------- pop-up sign up ---------- */
                 .overlay {
@@ -300,4 +307,158 @@
 
                 .close:hover {
                     color: var(--text);
+                }
+
+        /* ---------- GRAPHICS AND BOXES ---------- */
+
+                /* space at the bottom of every page */
+                .container {
+                    padding-bottom: 60px;
+                }
+
+                /* nimation: things slide up and fade in when the page loads */
+                @keyframes fadeUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+
+        /* ---------- Round icons ---------- */
+                .icon {
+                    width: 46px;
+                    height: 46px;
+                    border-radius: 50%;
+                    background-color: #dff5f1;   /* light green circle */
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 16px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: var(--green);
+                }
+
+                .icon svg {
+                    width: 22px;
+                    height: 22px;
+                    stroke: var(--green);
+                    fill: none;
+                    stroke-width: 2;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                }
+
+        /* ---------- Score card (home page) ---------- */
+                .score-card {
+                    background-color: white;
+                    border: 1px solid var(--line);
+                    border-radius: 14px;
+                    padding: 24px;
+                    box-shadow: 0 10px 28px rgba(20, 33, 61, 0.10);
+                    animation: fadeUp 0.9s ease both;
+                }
+
+                .ring-row {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    margin: 18px 0 20px;
+                }
+
+                /* the circle that shows the score: 72% is green, the rest is gray */
+                .ring {
+                    width: 110px;
+                    height: 110px;
+                    border-radius: 50%;
+                    background: conic-gradient(var(--green-dark) 0 72%, var(--line) 0);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                }
+
+                /* white circle on top of the ring so it looks like a donut */
+                .ring-inner {
+                    width: 82px;
+                    height: 82px;
+                    border-radius: 50%;
+                    background-color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 34px;
+                    font-weight: 600;
+                }
+
+                .ring-text {
+                    color: var(--gray);
+                    font-size: 15px;
+                }
+
+                .ring-text b {
+                    color: var(--text);
+                    font-size: 18px;
+                }
+
+                /* one line in the gap list */
+                .gap {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 10px;
+                    background-color: #fff6e0;
+                    border-left: 4px solid #e0a020;
+                    border-radius: 6px;
+                    padding: 9px 12px;
+                    font-size: 14px;
+                }
+
+                .gap span {
+                    color: var(--green);
+                    font-weight: 600;
+                    white-space: nowrap;
+                }
+
+        /* ---------- Numbers row ---------- */
+                .stats {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    padding: 10px 0 14px;
+                }
+
+                .stat {
+                    flex: 1;
+                    min-width: 200px;
+                    background-color: white;
+                    border: 1px solid var(--line);
+                    border-top: 4px solid var(--green-dark);
+                    border-radius: 12px;
+                    padding: 20px 24px;
+                    animation: fadeUp 0.9s ease both;
+                }
+
+                .stat-number {
+                    font-size: 40px;
+                    font-weight: 500;
+                    margin-bottom: 4px;
+                }
+
+        /* ---------- Team pictures (initials in a circle) ---------- */
+                .avatar {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    background: linear-gradient(135deg, var(--green-dark), var(--green));
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 22px;
+                    font-weight: 600;
+                    margin-bottom: 16px;
                 }

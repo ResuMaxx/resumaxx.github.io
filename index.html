@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ResuMaxx</title>
+    <title>CareerMaxx</title>
 
     <!-- Loads the fonts from Google Fonts (needs internet) -->
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
 
     <!-- Navigation Bar -->
     <div class="navbar">
-        <div class="logo">ResuMaxx</div>
+        <div class="logo">CareerMaxx</div>
 
         <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
@@ -41,42 +41,122 @@
 
             <p class="subtitle">
                 Find experience. Build your résumé. Stand out.
+                <br><br>
+                CareerMaxx gives your résumé a score, shows what is missing, and points you to the clubs, events and programs in Ottawa that fill the gaps.
             </p>
 
             <div class="buttons">
-                <a href="#features" class="button button-green">See features</a>
-                <a href="#pricing" class="button">Pricing</a>
+                <a href="features.html" class="button button-green">See features</a>
+                <a href="pricing.html" class="button">Pricing</a>
                 <button id="openBtn"> Sign up</button>
             </div>
         </div>
 
-        <!-- Right side: the score -->
+        <!-- Right side: the score card -->
         <div class="score-panel">
-            <div class="small-label">Résumé score</div>
-            <div class="big-number">72</div>
+            <div class="score-card">
+                <div class="small-label">Résumé score</div>
+
+                <!-- the circle with the score inside -->
+                <div class="ring-row">
+                    <div class="ring">
+                        <div class="ring-inner">72</div>
+                    </div>
+                    <div class="ring-text">
+                        <b>Good start!</b><br>
+                        out of 100<br>
+                        3 gaps found
+                    </div>
+                </div>
+
+                <!-- example gap list -->
+                <div class="column-container">
+                    <div class="small-label">Gap list (example)</div>
+                    <div class="gap">No numbers in your bullet points <span>+8</span></div>
+                    <div class="gap">No teamwork or leadership shown <span>+6</span></div>
+                    <div class="gap">Missing keyword: Git <span>+4</span></div>
+                </div>
+            </div>
         </div>
 
     </div>
 
-    <!-- ===== Three columns: Find / Build / Show ===== -->
+    <!-- Numbers row -->
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-number">100</div>
+            <div class="small-label">Point score</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">3</div>
+            <div class="small-label">Steps to a better résumé</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">EN / FR</div>
+            <div class="small-label">Two languages</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">$0</div>
+            <div class="small-label">To get started</div>
+        </div>
+    </div>
+
+    <!--  Three columns: Find / Build / Show  -->
     <div class="features" id="features">
 
         <div class="feature">
+            <!-- magnifying glass icon -->
+            <div class="icon">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+            </div>
             <div class="small-label">Find</div>
             <h3>Opportunities</h3>
             <p>Internships, clubs, events.</p>
         </div>
 
         <div class="feature">
+            <!-- document icon -->
+            <div class="icon">
+                <svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="14 3 14 9 20 9"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="14" y2="17"/></svg>
+            </div>
             <div class="small-label">Build</div>
             <h3>Your résumé</h3>
             <p>Clear, technical bullet points.</p>
         </div>
 
         <div class="feature">
+            <!-- bar chart icon -->
+            <div class="icon">
+                <svg viewBox="0 0 24 24"><line x1="6" y1="20" x2="6" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="18" y1="20" x2="18" y2="14"/></svg>
+            </div>
             <div class="small-label">Show</div>
             <h3>What's missing</h3>
             <p>A score and a gap list.</p>
+        </div>
+    </div>
+
+    <!--  Three columns: How it works  -->
+    <div class="features">
+
+        <div class="feature">
+            <div class="icon">1</div>
+            <div class="small-label">Step 1</div>
+            <h3>Get your score</h3>
+            <p>Upload your résumé and get a score out of 100.</p>
+        </div>
+
+        <div class="feature">
+            <div class="icon">2</div>
+            <div class="small-label">Step 2</div>
+            <h3>Fill the gaps</h3>
+            <p>See what is missing, then get a club, event or program that helps.</p>
+        </div>
+
+        <div class="feature">
+            <div class="icon">3</div>
+            <div class="small-label">Step 3</div>
+            <h3>Write it up</h3>
+            <p>Turn what you did into a clear bullet point and watch your score go up.</p>
         </div>
     </div>
 
@@ -95,6 +175,7 @@
         </div>
     </div>
 
+    <!-- JavaScript SIGN UP POPUP -->
     <script>
         const popup = document.getElementById("popup");
 
