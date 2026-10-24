@@ -1,194 +1,265 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>CareerMaxx</title>
 
-    <!-- Loads the fonts from Google Fonts (needs internet) -->
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- External CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
-
 <body>
-<!-- body = everything you see -->
 
 <div class="container">
 
     <!-- Navigation Bar -->
     <div class="navbar">
-        <div class="logo">CareerMaxx</div>
+
+        <div class="logo">
+            CareerMaxx
+        </div>
 
         <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="team.html">Team</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="team.html">Team</a></li>
         </ul>
+
+        <button class="button button-dark" id="openBtn">
+            Get started →
+        </button>
+
     </div>
 
-    <!-- ======= Hero Section ======= -->
+    <!-- Hero Section -->
     <div class="hero">
 
-        <!-- Left side: title, subtitle, buttons -->
+        <!-- Left side -->
         <div class="hero-left">
-            <h1>Résumés that<br>get <span class="green-text">noticed.</span></h1>
+
+            <div class="tag">YOUR NEXT STEP STARTS HERE</div>
+
+            <h1>
+                Build your résumé.<br>
+                <span class="purple-text">Build your future.</span>
+            </h1>
 
             <p class="subtitle">
-                Find experience. Build your résumé. Stand out.
+                Find experience. Improve your résumé.
+                Stand out from the crowd.
                 <br><br>
-                CareerMaxx gives your résumé a score, shows what is missing, and points you to the clubs, events and programs in Ottawa that fill the gaps.
+                CareerMaxx scores your résumé, identifies
+                missing skills, and helps you discover
+                opportunities to grow.
             </p>
 
             <div class="buttons">
-                <a href="features.html" class="button button-green">See features</a>
-                <a href="pricing.html" class="button">Pricing</a>
-                <button id="openBtn"> Sign up</button>
+                <a href="features.html" class="button button-dark">
+                    Explore features →
+                </a>
             </div>
+
+            <p class="small-note">
+                Free to get started · Made for students
+            </p>
+
         </div>
 
-        <!-- Right side: the score card -->
+        <!-- Right side: résumé score example -->
         <div class="score-panel">
-            <div class="score-card">
-                <div class="small-label">Résumé score</div>
 
-                <!-- the circle with the score inside -->
+            <div class="score-card">
+
+                <div class="small-label">YOUR RÉSUMÉ OVERVIEW</div>
+
+                <h2>Your résumé, improved.</h2>
+
+                <p class="card-description">
+                    Understand your strengths and discover
+                    what to improve next.
+                </p>
+
+                <!-- Résumé score -->
                 <div class="ring-row">
+
                     <div class="ring">
                         <div class="ring-inner">72</div>
                     </div>
+
                     <div class="ring-text">
-                        <b>Good start!</b><br>
-                        out of 100<br>
-                        3 gaps found
+                        <b>Good start!</b>
+                        <p>Résumé score out of 100</p>
+                        <p>3 areas to improve</p>
                     </div>
+
                 </div>
 
-                <!-- example gap list -->
+                <!-- Example gap list -->
+                <div class="small-label">SUGGESTED IMPROVEMENTS</div>
+
                 <div class="column-container">
-                    <div class="small-label">Gap list (example)</div>
-                    <div class="gap">No numbers in your bullet points <span>+8</span></div>
-                    <div class="gap">No teamwork or leadership shown <span>+6</span></div>
-                    <div class="gap">Missing keyword: Git <span>+4</span></div>
+
+                    <div class="gap">
+                        Add measurable achievements
+                        <span>+8</span>
+                    </div>
+
+                    <div class="gap">
+                        Highlight leadership experience
+                        <span>+6</span>
+                    </div>
+
+                    <div class="gap">
+                        Include technical skills
+                        <span>+4</span>
+                    </div>
+
                 </div>
+
+                <p class="example-note">Example résumé analysis</p>
+
             </div>
         </div>
 
     </div>
 
-    <!-- Numbers row -->
-    <div class="stats">
-        <div class="stat">
-            <div class="stat-number">100</div>
-            <div class="small-label">Point score</div>
-        </div>
-        <div class="stat">
-            <div class="stat-number">3</div>
-            <div class="small-label">Steps to a better résumé</div>
-        </div>
-        <div class="stat">
-            <div class="stat-number">EN / FR</div>
-            <div class="small-label">Two languages</div>
-        </div>
-        <div class="stat">
-            <div class="stat-number">$0</div>
-            <div class="small-label">To get started</div>
-        </div>
+    <!-- Features Section -->
+    <div class="section-heading">
+        <div class="tag">WHAT WE OFFER</div>
+        <h2>Everything you need to grow.</h2>
+        <p>Simple tools to help you take your next step.</p>
     </div>
 
-    <!--  Three columns: Find / Build / Show  -->
-    <div class="features" id="features">
-
-        <div class="feature">
-            <!-- magnifying glass icon -->
-            <div class="icon">
-                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
-            </div>
-            <div class="small-label">Find</div>
-            <h3>Opportunities</h3>
-            <p>Internships, clubs, events.</p>
-        </div>
-
-        <div class="feature">
-            <!-- document icon -->
-            <div class="icon">
-                <svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="14 3 14 9 20 9"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="14" y2="17"/></svg>
-            </div>
-            <div class="small-label">Build</div>
-            <h3>Your résumé</h3>
-            <p>Clear, technical bullet points.</p>
-        </div>
-
-        <div class="feature">
-            <!-- bar chart icon -->
-            <div class="icon">
-                <svg viewBox="0 0 24 24"><line x1="6" y1="20" x2="6" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="18" y1="20" x2="18" y2="14"/></svg>
-            </div>
-            <div class="small-label">Show</div>
-            <h3>What's missing</h3>
-            <p>A score and a gap list.</p>
-        </div>
-    </div>
-
-    <!--  Three columns: How it works  -->
     <div class="features">
 
         <div class="feature">
-            <div class="icon">1</div>
-            <div class="small-label">Step 1</div>
+            <div class="icon purple-icon">01</div>
+            <div class="small-label">DISCOVER</div>
+            <h3>Find opportunities</h3>
+            <p>
+                Explore internships, clubs, events
+                and programs that match your goals.
+            </p>
+        </div>
+
+        <div class="feature">
+            <div class="icon blue-icon">02</div>
+            <div class="small-label">IMPROVE</div>
+            <h3>Build your résumé</h3>
+            <p>
+                Strengthen your résumé with clear
+                bullet points and relevant experience.
+            </p>
+        </div>
+
+        <div class="feature">
+            <div class="icon green-icon">03</div>
+            <div class="small-label">UNDERSTAND</div>
+            <h3>See what's missing</h3>
+            <p>
+                Get a résumé score and understand
+                which skills you should improve.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- How It Works Section -->
+    <div class="section-heading">
+        <div class="tag">HOW IT WORKS</div>
+        <h2>Three simple steps.</h2>
+        <p>From your first résumé to your next opportunity.</p>
+    </div>
+
+    <div class="features">
+
+        <div class="feature">
+            <div class="icon purple-icon">1</div>
             <h3>Get your score</h3>
-            <p>Upload your résumé and get a score out of 100.</p>
+            <p>
+                Upload your résumé and receive
+                a score out of 100.
+            </p>
         </div>
 
         <div class="feature">
-            <div class="icon">2</div>
-            <div class="small-label">Step 2</div>
+            <div class="icon peach-icon">2</div>
             <h3>Fill the gaps</h3>
-            <p>See what is missing, then get a club, event or program that helps.</p>
+            <p>
+                Find clubs, events and programs
+                that help improve your skills.
+            </p>
         </div>
 
         <div class="feature">
-            <div class="icon">3</div>
-            <div class="small-label">Step 3</div>
+            <div class="icon pink-icon">3</div>
             <h3>Write it up</h3>
-            <p>Turn what you did into a clear bullet point and watch your score go up.</p>
+            <p>
+                Add your new experiences and
+                make your résumé stronger.
+            </p>
         </div>
+
     </div>
 
-
-
-    <div class="overlay" id="popup">
-        <div class="modal">
-            <button class="close" id="closeBtn">&times</button>
-            <h2>Sign up</h2>
-            <form action="#" method="post">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">Create account</button>
-            </form>
-        </div>
+    <!-- Bottom message -->
+    <div class="bottom-banner">
+        <h3>Your future starts with one step.</h3>
+        <p>Built for students, by students.</p>
     </div>
-
-    <!-- JavaScript SIGN UP POPUP -->
-    <script>
-        const popup = document.getElementById("popup");
-
-        document.getElementById("openBtn").onclick = () => popup.classList.add("show");
-        document.getElementById("closeBtn").onclick = () => popup.classList.remove("show");
-
-        // Close the popup if the user clicks outside of it
-        popup.onclick = (e) => {
-        if (e.target === popup) popup.classList.remove("show");
-        };
-    </script>
-
 
 </div>
+
+<!-- Sign up popup -->
+<div class="overlay" id="popup">
+
+    <div class="modal">
+
+        <button class="close" id="closeBtn">&times;</button>
+
+        <h2>Get started</h2>
+        <p class="card-description">
+            Create your CareerMaxx account.
+        </p>
+
+        <form action="#" method="post">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Create account</button>
+        </form>
+
+    </div>
+
+</div>
+
+<!-- JavaScript for sign up popup -->
+<script>
+    const popup = document.getElementById("popup");
+
+    document.getElementById("openBtn").onclick = () => {
+        popup.classList.add("show");
+    };
+
+    document.getElementById("closeBtn").onclick = () => {
+        popup.classList.remove("show");
+    };
+
+    // Close when clicking outside the popup
+    popup.onclick = (e) => {
+        if (e.target === popup) {
+            popup.classList.remove("show");
+        }
+    };
+</script>
+
 </body>
 </html>

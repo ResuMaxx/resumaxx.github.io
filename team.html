@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,14 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> Features </title>
+    <title>Team - CareerMaxx</title>
 
-    <!-- Loads the fonts from Google Fonts (needs internet) -->
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- External CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -23,7 +21,10 @@
 
     <!-- Navigation Bar -->
     <div class="navbar">
-        <div class="logo">CareerMaxx</div>
+
+        <div class="logo">
+            CareerMaxx
+        </div>
 
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
@@ -31,96 +32,177 @@
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="team.html" class="active">Team</a></li>
         </ul>
+
+        <a href="index.html" class="button button-dark">
+            Get started →
+        </a>
+
     </div>
 
-    <!-- the Hero section -->
-    <div class="hero-left">
-        <br> <br> <br>
+    <!-- Team introduction -->
+    <div class="team-intro">
+
+        <div class="tag">OUR TEAM</div>
+
+        <h1>Students building for students.</h1>
 
         <p class="subtitle">
-            Group 17 • SEG2900 • UOTTAWA
+            helping students
+            build stronger résumés and discover
+            new opportunities.
         </p>
-        <h1>The <span class="green-text">team.</span></h1>
 
-        <p class="subtitle">
-            We are first-year software engineering students at the University of Ottawa. We made CareerMaxx because we are all writing our first résumés.
+        <p class="small-note">
+            Group 17 · SEG2900 · University of Ottawa
         </p>
+
     </div>
 
-    <!-- Team members: each person only changes their own block (initials, role + bio) and commits it -->
-    <div class="features">
+    <!-- Team members -->
+    <!-- Each person can edit their own card -->
 
-        <div class="feature">
-            <div class="avatar">MG</div>
-            <div class="small-label">Role: </div>
+    <div class="features team-grid">
+
+        <!-- Milda -->
+        <div class="feature team-card">
+
+            <div class="avatar purple-icon">MG</div>
+
             <h3>Milda Gagnon</h3>
-            <p>Description</p>
+
+            <p>Team member</p>
+
+            <div class="card-footer">CareerMaxx Team</div>
+
         </div>
 
-        <div class="feature">
-            <div class="avatar">AI</div>
-            <div class="small-label">Role: </div>
+        <!-- Adam -->
+        <div class="feature team-card">
+
+            <div class="avatar blue-icon">AI</div>
+
             <h3>Adam Itani</h3>
-            <p>Description</p>
+
+            <p>Team member</p>
+
+            <div class="card-footer">CareerMaxx Team</div>
+
         </div>
 
-        <div class="feature">
-            <div class="avatar">MM</div>
-            <div class="small-label">Role: </div>
+        <!-- Mya -->
+        <div class="feature team-card">
+
+            <div class="avatar pink-icon">MM</div>
+
             <h3>Mya Mayhew</h3>
-            <p>Description</p>
-        </div>
-    </div>
 
-    <div class="features">
+            <p>Team member</p>
 
-        <div class="feature">
-            <div class="avatar">VN</div>
-            <div class="small-label">Role: </div>
-            <h3>Veronique Ngo</h3>
-            <p>Description</p>
+            <div class="card-footer">CareerMaxx Team</div>
+
         </div>
 
-        <div class="feature">
-            <div class="avatar">SY</div>
-            <div class="small-label">Role: </div>
+        <!-- Véronique -->
+        <div class="feature team-card">
+
+            <div class="avatar green-icon">VN</div>
+
+            <h3>Véronique Ngo</h3>
+
+            <p>Team member</p>
+
+            <div class="card-footer">CareerMaxx Team</div>
+
+        </div>
+
+        <!-- Shafeeq -->
+        <div class="feature team-card">
+
+            <div class="avatar peach-icon">SY</div>
+
             <h3>Shafeeq Yussuf</h3>
-            <p>Description</p>
+
+            <p>Team member</p>
+
+            <div class="card-footer">CareerMaxx Team</div>
+
         </div>
 
-        <div class="feature">
-            <div class="avatar">?</div>
-            <div class="small-label">Role: </div>
-            <h3>Team member 6</h3>
-            <p>Change this name and write 2 or 3 sentences about yourself.</p>
-        </div>
     </div>
 
-    <!-- Why we made it -->
+    <!-- Why we made CareerMaxx -->
+
+    <div class="section-heading">
+        <div class="tag">OUR MISSION</div>
+        <h2>Why we built CareerMaxx.</h2>
+    </div>
+
     <div class="features">
 
         <div class="feature">
-            <div class="icon">1</div>
-            <div class="small-label">Why we made it</div>
-            <h3>The problem</h3>
-            <p>Every first-year student hears "get experience" and "improve your résumé", but nobody says where to find the experience or what is missing.</p>
+
+            <div class="icon purple-icon">1</div>
+
+            <div class="small-label">THE PROBLEM</div>
+
+            <h3>Getting started is hard</h3>
+
+            <p>
+                Students are told to gain experience,
+                but often don't know where to find
+                opportunities or what their résumé
+                is missing.
+            </p>
+
         </div>
 
         <div class="feature">
-            <div class="icon">2</div>
-            <div class="small-label">What we are building</div>
-            <h3>The solution</h3>
-            <p>CareerMaxx gives a score and a gap list, then points to real clubs, events and programs that fill each gap.</p>
+
+            <div class="icon blue-icon">2</div>
+
+            <div class="small-label">OUR SOLUTION</div>
+
+            <h3>A clearer next step</h3>
+
+            <p>
+                CareerMaxx gives students a résumé
+                score, identifies gaps, and recommends
+                ways to improve.
+            </p>
+
         </div>
 
         <div class="feature">
-            <div class="icon">3</div>
-            <div class="small-label">Who it is for</div>
-            <h3>Students</h3>
-            <p>Mostly first-year and early-career students looking for their first co-op, internship or club.</p>
+
+            <div class="icon green-icon">3</div>
+
+            <div class="small-label">WHO IT'S FOR</div>
+
+            <h3>Made for students</h3>
+
+            <p>
+                Especially first-year and early-career
+                students looking for internships,
+                co-ops and extracurricular experience.
+            </p>
+
         </div>
+
+    </div>
+
+    <!-- Bottom message -->
+    <div class="bottom-banner">
+
+        <h3>Built around student ambition.</h3>
+
+        <p>
+            Our goal is simple: help every student
+            discover a next step that fits.
+        </p>
+
     </div>
 
 </div>
+
 </body>
 </html>
