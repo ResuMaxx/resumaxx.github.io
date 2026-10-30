@@ -602,3 +602,225 @@ h1 {
         flex: 1 1 100%;
     }
 }
+
+
+/* ---------- Pricing Section ---------- */
+
+.hero-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 95px 0 0;
+    position: relative;
+}
+
+/* ---------- Pricing Heading ---------- */
+
+.hero-cards .hero-left {
+    width: 100%;
+    flex: none;
+}
+
+.subtitle-pricing {
+    color: var(--gray);
+    font-size: 19px;
+    line-height: 1.7;
+    margin: 25px 0 30px;
+    max-width: 570px;
+}
+
+.subtitle-pricing p {
+    margin-bottom: 12px;
+}
+
+/* ---------- Pricing Card Container ---------- */
+
+.row-container-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 16px;
+    width: 100%;
+    margin-top: -40px;
+}
+
+/* ---------- Shared Card Styling ---------- */
+
+.free-card,
+.Plus-card,
+.Extra-card {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    border-radius: 35px;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    overflow-wrap: break-word;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ---------- Hover Effect ---------- */
+
+.free-card:hover,
+.Plus-card:hover,
+.Extra-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- Free Card ---------- */
+
+.free-card {
+    background-color: #C9C8F2;
+    min-height: 240px;
+}
+
+.free-card h1 {
+    font-size: 28px;
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+.free-card p {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.free-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* ---------- Plus Card ---------- */
+
+.Plus-card {
+    background-color: #9391E2;
+    min-height: 390px;
+}
+
+.Plus-card h1 {
+    font-size: 28px;
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+.Plus-card p {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.Plus-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* ---------- Extra Card ---------- */
+
+.Extra-card {
+    background-color: #5957C9;
+    color: black;
+    min-height: 460px;
+}
+
+.Extra-card h1 {
+    font-size: 28px;
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+.Extra-card p {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.Extra-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* ---------- Start Trial Buttons ---------- */
+
+.free-card .button,
+.Plus-card .button,
+.Extra-card .button {
+    margin-top: auto;
+    width: 100%;
+    flex-shrink: 0;
+    background-color: #171923;
+    color: white;
+}
+
+.free-card .button:hover,
+.Plus-card .button:hover,
+.Extra-card .button:hover {
+    background-color: #33354A;
+}
+
+/* ---------- Tablet Version ---------- */
+
+@media (max-width: 900px) {
+
+    .hero-cards {
+        padding: 60px 0 0;
+    }
+
+    .row-container-bottom {
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 20px;
+    }
+
+    .free-card,
+    .Plus-card,
+    .Extra-card {
+        width: 100%;
+        min-height: auto;
+        padding: 30px;
+    }
+}
+
+/* ---------- Phone Version ---------- */
+
+@media (max-width: 500px) {
+
+    .hero-cards {
+        padding: 40px 0 0;
+    }
+
+    .subtitle-pricing {
+        font-size: 16px;
+    }
+
+    .free-card,
+    .Plus-card,
+    .Extra-card {
+        border-radius: 25px;
+        padding: 25px;
+    }
+}

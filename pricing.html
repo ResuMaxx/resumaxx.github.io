@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,32 +8,142 @@
     <title>CareerMaxx</title>
 
     <!-- Loads the fonts from Google Fonts (needs internet) -->
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- External CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
 
 </head>
 
-
 <body>
-<!-- body = everything you see -->
 
 <div class="container">
 
     <!-- Navigation Bar -->
+
     <div class="navbar">
-        <div class="logo">CareerMaxx</div>
+
+        <div class="logo">
+            <img src="CareerMaxx-Icon.png" width="50">
+            CareerMaxx
+        </div>
 
         <ul class="nav-links">
-            <li><a href="index.html" >Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="features.html">Features</a></li>
             <li><a href="pricing.html" class="active">Pricing</a></li>
             <li><a href="team.html">Team</a></li>
         </ul>
+
+        <button class="button button-dark" id="openBtn">
+            Get started →
+        </button>
+
     </div>
 
 
+    <!-- ---------- Pricing Section ---------- -->
+
+    <div class="hero-cards">
+
+        <!-- Heading Section -->
+
+        <div class="hero-left">
+
+            <div class="tag">YOUR OPTIONS</div>
+
+            <h1>
+                Invest in your
+                <span class="purple-text">future</span>.
+            </h1>
+
+            <div class="subtitle-pricing">
+
+                <p>
+                    Flexible pricing, powerful career tools,
+                    and solutions designed to help you stand out.
+                </p>
+
+                <p>
+                    Choose the plan that fits your needs.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ---------- Pricing Cards ---------- -->
+
+        <div class="row-container-bottom">
+
+            <!-- Free Plan -->
+
+            <div class="free-card">
+
+                <h1>Free Plan</h1>
+
+                <p>$0</p>
+
+                <ul>
+                    <li>Access to basic features</li>
+                    <li>Limited storage</li>
+                    <li>Email support</li>
+                </ul>
+
+                <button class="button button-dark" type="button">
+                    Start Trial
+                </button>
+
+            </div>
+
+
+            <!-- Plus Plan -->
+
+            <div class="Plus-card">
+
+                <h1>Plus Plan</h1>
+
+                <p>$4.99</p>
+
+                <ul>
+                    <li>Basic Résumé Analysis</li>
+                    <li>Personalized Job Recommendations</li>
+                    <li>Career Progress Tracking</li>
+                </ul>
+
+                <button class="button button-dark" type="button">
+                    Start Trial
+                </button>
+
+            </div>
+
+
+            <!-- Extra Plan -->
+
+            <div class="Extra-card">
+
+                <h1>Extra Plan</h1>
+
+                <p>$9.99</p>
+
+                <ul>
+                    <li>Advanced AI Résumé Optimization</li>
+                    <li>Unlimited Job Matching</li>
+                    <li>AI Interview Coaching</li>
+                </ul>
+
+                <button class="button button-dark" type="button">
+                    Start Trial
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
+
 </body>
 </html>
