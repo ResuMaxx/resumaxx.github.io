@@ -1435,3 +1435,34 @@ input:focus-visible {
     display: block;
     margin-bottom: 6px;
 }
+/* ---------- Team page: photos and links ---------- */
+
+.avatar-photo {
+    display: block;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 25%;
+    margin: 0 auto 25px;
+}
+
+.team-links {
+    list-style: none;
+    margin: 14px 0 0;
+}
+
+.team-links li {
+    margin-bottom: 6px;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.team-links a {
+    color: var(--purple);
+    text-decoration: none;
+}
+
+.team-links a:hover {
+    text-decoration: underline;
+}
